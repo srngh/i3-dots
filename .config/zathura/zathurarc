@@ -1,0 +1,17 @@
+set default-fg "#78536c"
+set default-bg "#eceaeb"
+
+set inputbar-fg "#78536c"
+set inputbar-bg "#eceaeb"
+
+set notification-fg "#78536c"
+set notification-bg "#eceaeb"
+
+set recolor-darkcolor "#78536c"
+set recolor-lightcolor "#eceaeb"
+
+set statusbar-fg "#78536c"
+set statusbar-bg "#eceaeb"
+
+set recolor true
+set recolor-keephue true
