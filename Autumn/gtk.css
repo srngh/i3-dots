@@ -1,0 +1,23 @@
+#lxdm {
+	background-image: url("autumn_tree.png");
+	background-repeat: round;
+}
+
+#bottom_pane {
+	background-color: rgba(0,0,0,0.24);
+}
+
+#time {
+	font: Sans 12;
+	color: #78536c78536c78536c78536c78536c78536c78536c;
+}
+
+#prompt {
+	font: Sans 14;
+	color: #eceaeb;
+}
+
+#bottom_pane GtkLabel {
+	font: Sans 12;
+	color: #78536c;
+}
