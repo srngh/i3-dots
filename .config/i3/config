@@ -24,6 +24,7 @@ set $wallpaper $HOME/wallpapers/autumn_tree.png
 
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -86,10 +87,6 @@ exec --no-startup-id picom -b
 # feh is a lightweight image viewer which is used to display a wallpaper
 
 exec --no-startup-id feh --bg-scale $wallpaper
-
-# change keymap back to german since lightdm is a bitch
-
-exec --no-startup-id setxkbmap -layout de
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -168,10 +165,13 @@ mode "$mode_gaps_inner" {
 
 # Launch rofi as app launcher
 # With flag -theme a rofi.rasi theme can be applied
-bindsym $mod+space exec rofi -show drun -theme ~/.cache/wal/colors-rofi-dark.rasi
+bindsym $mod+space exec rofi -show drun -theme ~/.cache/wal/colors-rofi-dark.rasi -show-icons -icon-theme papirus-icon-theme
 
 #Launch firefox
 bindsym $mod+Shift+Return exec firefox
+
+# Launch nemo
+bindsym $mod+Shift+n exec nemo
 
 # change focus
 bindsym $mod+h focus left
@@ -279,6 +279,18 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# move focused container to workspace and go to that workspace
+
+bindsym $mod+$alt+1 move container to workspace number $ws1; workspace number $ws1
+bindsym $mod+$alt+2 move container to workspace number $ws2; workspace number $ws2
+bindsym $mod+$alt+3 move container to workspace number $ws3; workspace number $ws3
+bindsym $mod+$alt+4 move container to workspace number $ws4; workspace number $ws4
+bindsym $mod+$alt+5 move container to workspace number $ws5; workspace number $ws5
+bindsym $mod+$alt+6 move container to workspace number $ws6; workspace number $ws6
+bindsym $mod+$alt+7 move container to workspace number $ws7; workspace number $ws7
+bindsym $mod+$alt+8 move container to workspace number $ws8; workspace number $ws8
+bindsym $mod+$alt+9 move container to workspace number $ws9; workspace number $ws9
 
 # Adjust Screen Brightness
 
