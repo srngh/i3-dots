@@ -4,7 +4,7 @@ dotfiles for my i3-gaps setup
 ## Screenshots
 
 ![Empty desktop](https://raw.githubusercontent.com/soerengh/i3-dots/main/screenshots/desktop.png)
-![terminal programs](https://raw.githubusercontent.com/soerengh/i3-dots/main/screenshots/screenshot.png)
+![terminal programs](https://raw.githubusercontent.com/soerengh/i3-dots/main/screenshots/tiling.png)
 
 ## Programs
 
@@ -24,3 +24,4 @@ dotfiles for my i3-gaps setup
 - tweak the i3-status info for my laptop / desktop setup respectively
 - custom gtk theme for gtk applications
 - improve the generated pywal-discord theme
+- ~~ new icons for lxdm theme ~~
