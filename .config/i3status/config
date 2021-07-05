@@ -15,9 +15,9 @@ general {
 }
 
 #order += "ipv6"
-order += "wireless _first_"
-#order += "ethernet _first_"
-order += "battery all"
+#order += "wireless _first_"
+order += "ethernet _first_"
+#order += "battery all"
 #order += "disk /"
 #order += "load"
 #order += "memory"
@@ -26,8 +26,8 @@ order += "volume master"
 order += "tztime berlin"
 
 volume master {
-        format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
+        format = ": %volume"
+        format_muted = ": muted (%volume)"
         device = "pulse"
         mixer = "Master"
         mixer_idx = 0
@@ -41,8 +41,8 @@ wireless _first_ {
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_up = ": %ip"
+        format_down = ""
 }
 
 battery all {
@@ -69,5 +69,5 @@ battery all {
 # }
 # 
 tztime berlin {
-          format = "%H:%M"
+          format = " %H:%M"
 # }
