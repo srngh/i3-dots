@@ -25,3 +25,7 @@ dotfiles for my i3-gaps setup
 - custom gtk theme for gtk applications
 - improve the generated pywal-discord theme
 - ~~new icons for lxdm theme~~
+
+## Other
+
+thanks to reddit user u/Franrekkk for the amazing [wallpaper](https://www.reddit.com/r/PixelArt/comments/lkaiqf/another_watercolour_pixelart_tree/)
