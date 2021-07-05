@@ -28,7 +28,7 @@ set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:iosevka mono 9
 
 ##################################################################
 #   ____                      _ 
@@ -57,9 +57,6 @@ client.urgent           $bg     $bg     $fg  $bg       $bg
 client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
-
-# PROTIP: You can also dynamically set dmenu's colors this way:
-bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 
 
 ##################################################################
@@ -103,6 +100,12 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# change keymap to iso-de layout
+bindsym $mod+$alt+BackSpace exec setxkbmap de
+
+# change keymap to ansi layout
+bindsym $mod+$alt+Shift+BackSpace exec setxkbmap us
 
 ##################################################################
 #  _ _____                             
