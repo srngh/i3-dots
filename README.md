@@ -24,4 +24,4 @@ dotfiles for my i3-gaps setup
 - tweak the i3-status info for my laptop / desktop setup respectively
 - custom gtk theme for gtk applications
 - improve the generated pywal-discord theme
-- ~~ new icons for lxdm theme ~~
+- ~~new icons for lxdm theme~~
