@@ -46,8 +46,8 @@ font pango:iosevka mono 9
 # from the generated scheme.
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources.
-set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $fg i3wm.color7 #100d0e
+set_from_resource $bg i3wm.color2 #eceaeb
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $fg  $bg       $bg
@@ -102,10 +102,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # change keymap to iso-de layout
-bindsym $mod+$alt+BackSpace exec setxkbmap de
+bindsym $mod+$alt+BackSpace exec setxkbmap de && notify-send 'keymap change' 'iso-de keymap'
 
 # change keymap to ansi layout
-bindsym $mod+$alt+Shift+BackSpace exec setxkbmap us
+bindsym $mod+$alt+Shift+BackSpace exec setxkbmap us && notify-send 'keymap change' 'ansi-us keymap'
 
 ##################################################################
 #  _ _____                             
